@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">budgetapplication</string>
+
+    <string-array name="category_array">
+        <item>Food</item>
+        <item>Amenities</item>
+        <item>Transportation</item>
+        <item>Other</item>
+    </string-array>
+</resources>

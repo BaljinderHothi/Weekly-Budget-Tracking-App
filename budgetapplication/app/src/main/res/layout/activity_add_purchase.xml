@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20283E">
+
+    <EditText
+        android:id="@+id/entAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Enter amount here"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black"
+        android:background="#CED2CC"
+        android:inputType="numberDecimal"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="1000dp"
+        android:layout_height="70dp"
+        android:background="#CED2CC"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/entAmount"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-205dp"
+        android:layout_marginEnd="10dp"
+        android:background="#CED2CC"
+        android:text="Add Purchase"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCategory"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-205dp"
+        android:background="#CED2CC"
+        android:text="Back"
+        android:textColor="@color/black" />
+</RelativeLayout>

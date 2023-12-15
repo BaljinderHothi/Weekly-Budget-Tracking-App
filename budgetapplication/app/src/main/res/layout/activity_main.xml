@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F9EFEC">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/WeeklySpendingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Here's Your Weekly Spending:"
+        android:textSize="30dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/WeeklyAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$365.00"
+        android:layout_below="@id/WeeklySpendingText"
+        android:layout_alignStart="@id/WeeklySpendingText"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/FoodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WeeklyAmount"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="30dp"
+        android:text="Food: "
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/FoodAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WeeklyAmount"
+        android:layout_marginTop="38dp"
+        android:layout_toRightOf="@+id/FoodText"
+        android:layout_marginLeft="1dp"
+        android:textSize="30dp"
+        android:text="350.41"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/AmenitiesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodText"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="Amenities: "
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/AmenitiesAmount"
+        android:text="20.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FoodAmount"
+        android:layout_toRightOf="@+id/AmenitiesText"
+        android:layout_marginLeft="1dp"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/TransportationText"
+        android:text="Transportation: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AmenitiesText"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/TransportationAmount"
+        android:text="30.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@+id/AmenitiesAmount"
+        android:layout_toRightOf="@+id/TransportationText"
+        android:layout_marginLeft="1dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/OtherText"
+        android:text="Other: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/TransportationText"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/OtherAmount"
+        android:text="40.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TransportationAmount"
+        android:textSize="30dp"
+        android:layout_toRightOf="@+id/OtherText"
+        android:layout_marginLeft="1dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/btnAddPurchase"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:text="Log New Purchase!"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        />
+
+</RelativeLayout>
